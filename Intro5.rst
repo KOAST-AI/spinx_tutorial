@@ -33,7 +33,8 @@ root/_build/html 에 생성된 모든 파일을 docs폴더에 복사
 
 docs 폴더에 .nojekyll 빈파일 생성.
 """"""""""""""""""""""""""""""""""""""""""
-.. github page는 jekyll 테마마를 기본으로 하여 제공한다.
+
+.. note:: github page는 jekyll 테마마를 기본으로 하여 제공한다.
     우리는 Sphinx를 이용하니 jekeyll을 사용하지 않는다고
     명시해주는 방법으로 .nojekyll 의 파일명을 가진 빈파일을 생성해준다.
 
@@ -68,6 +69,7 @@ git bash 실행.
         # 또한 원래의 버전과 비교하여 merge 할 수 있음
         # -M 옵션은 branch 의 이름을 의미.
         git branch -M main
+
 
 
 
