@@ -1,0 +1,460 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. 문서 작성하기. &mdash; test3 1.0 문서</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="4. 소스 설명 예제" href="Intro4.html" />
+    <link rel="prev" title="2. 기본 문법 참고" href="Intro2.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> test3
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Intro1.html">1. Sphinx 란 무엇인가?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intro1.html#id4">2. 설치하기 및 실행하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intro2.html">2. 기본 문법 참고</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intro2.html#syntax">- Syntax</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. 문서 작성하기.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sphinx">3.1 Sphinx 디렉토리 기본구조</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.2 새로운 문서 페이지 추가.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#doc-intor1-rst">doc 하위 디렉토리에 Intor1.rst 파일 생성</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#index-rst">index.rst 파일 수정</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">기존 빌드 지우기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#html">Html 새로 생성</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#py">3.3 .py 소스코드 추가하기.(기존 작성 파일을 사용해도됨.)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">index.rst 파일 수정</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#my-package-rst">my_package.rst 파일 생성</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">my_package.rst 파일에 아래 내용과 같이 작성.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#my-package">my_package 폴더 생성</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#my-module-py">my_module.py 생성.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">my_module.py 쓰기. 아래와 같이 작성하고 저장.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">빌드 지우고 html 재 생성</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#error">error 발생시!</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">정상 실행시 좌측</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">5. 패키지 소스 설명과 같은 페이지 생성~!!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Intro4.html">4. 소스 설명 예제</a></li>
+<li class="toctree-l1"><a class="reference internal" href="my_package.html">5. 패키지 소스 설명</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">test3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>3. 문서 작성하기.</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Intro3.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>3. 문서 작성하기.<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<div class="section" id="sphinx">
+<h2>3.1 Sphinx 디렉토리 기본구조<a class="headerlink" href="#sphinx" title="제목 주소">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>doc
+├─ _build
+│   ├─doctrees
+│   ├─html
+├─ _static
+├─ _templates
+├─ conf.py
+├─ index.rst
+├─ make.bat
+└──Makefile
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>3.2 새로운 문서 페이지 추가.<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<div class="section" id="doc-intor1-rst">
+<h3>doc 하위 디렉토리에 Intor1.rst 파일 생성<a class="headerlink" href="#doc-intor1-rst" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>## title 작성 필수. title 없으면 에러 발생.
+
+1. 타이틀 작성 !!!!!
+---------------------------
+</pre></div>
+</div>
+</div>
+<div class="section" id="index-rst">
+<h3>index.rst 파일 수정<a class="headerlink" href="#index-rst" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. test3 documentation master file, created by
+sphinx-quickstart on Mon Nov 30 17:21:10 2020.
+You can adapt this file completely to your liking, but it should at least
+contain the root `toctree` directive.
+
+Welcome to test3&#39;s documentation!
+=================================
+
+.. toctree::
+:maxdepth: 2
+:caption: Contents:
+
+##################### Intor1 추가.#######################
+Intro1
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>기존 빌드 지우기<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>## _build 하위 디렉토리 삭제됨.
+$ make clean
+</pre></div>
+</div>
+</div>
+<div class="section" id="html">
+<h3>Html 새로 생성<a class="headerlink" href="#html" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>## 새로 적용된 html 파일 생성.
+$ make html
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="py">
+<h2>3.3 .py 소스코드 추가하기.(기존 작성 파일을 사용해도됨.)<a class="headerlink" href="#py" title="제목 주소">¶</a></h2>
+<div class="section" id="id4">
+<h3>index.rst 파일 수정<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.. test3 documentation master file, created by
+sphinx-quickstart on Mon Nov 30 17:21:10 2020.
+You can adapt this file completely to your liking, but it should at least
+contain the root `toctree` directive.
+
+Welcome to test3&#39;s documentation!
+=================================
+
+.. toctree::
+:maxdepth: 2
+:caption: Contents:
+
+Intro1
+
+## my_package 추가 ( my_package.rst 새로운 인덱스 페이지)
+my_package
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+</pre></div>
+</div>
+</div>
+<div class="section" id="my-package-rst">
+<h3>my_package.rst 파일 생성<a class="headerlink" href="#my-package-rst" title="제목 주소">¶</a></h3>
+<p>doc 하위 디렉토리에 Intor1.rst 파일 생성 (index.rst 와 같은 레벨)</p>
+</div>
+<div class="section" id="id5">
+<h3>my_package.rst 파일에 아래 내용과 같이 작성.<a class="headerlink" href="#id5" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">my_package</span>
+<span class="o">======================================</span>
+
+<span class="o">..</span> <span class="n">automodule</span><span class="p">::</span> <span class="n">my_package</span>
+<span class="p">:</span><span class="n">members</span><span class="p">:</span>
+<span class="p">:</span><span class="n">undoc</span><span class="o">-</span><span class="n">members</span><span class="p">:</span>
+<span class="p">:</span><span class="n">show</span><span class="o">-</span><span class="n">inheritance</span><span class="p">:</span>
+
+<span class="c1">## title Name</span>
+
+<span class="n">Title</span> <span class="n">Name</span>
+<span class="o">-------------</span>
+
+<span class="c1">## my_package 폴더에  my_module 사용  automodule 로 .py 를 html 로 쉽게 변경.</span>
+<span class="o">..</span> <span class="n">automodule</span><span class="p">::</span> <span class="n">my_package</span><span class="o">.</span><span class="n">my_module</span>
+    <span class="p">:</span><span class="n">members</span><span class="p">:</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="my-package">
+<h3>my_package 폴더 생성<a class="headerlink" href="#my-package" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">doc</span>  <span class="n">하위</span> <span class="n">디렉토리에</span> <span class="n">my_packge</span> <span class="n">폴더</span> <span class="n">생성</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="my-module-py">
+<h3>my_module.py 생성.<a class="headerlink" href="#my-module-py" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">my_package</span>  <span class="n">하위</span> <span class="n">디렉토리에</span> <span class="n">my_module</span><span class="o">.</span><span class="n">py</span> <span class="n">파일</span> <span class="n">생성</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>my_module.py 쓰기. 아래와 같이 작성하고 저장.<a class="headerlink" href="#id6" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">들여쓰기</span>
+    <span class="n">들여쓰기와</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">주석을 사용하여 소스코드를 문서화 하도록 도와줌.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    My Module</span>
+<span class="sd">    ~~~~~~~~~~~~~~</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="k">class</span> <span class="nc">Test</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;두 개의 int 값을 입력받아 다양한 연산을 할 수 있도록 하는 클래스.</span>
+
+<span class="sd">    :param int a: a 값</span>
+<span class="sd">    :param int b: b 값</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_a</span> <span class="o">=</span> <span class="n">a</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_b</span> <span class="o">=</span> <span class="n">b</span>
+
+    <span class="k">def</span> <span class="nf">is_same</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;미리 입력받은 a와 b값이 같은지 확인하여 결과를 반환합니다.</span>
+
+<span class="sd">        :return: boolean True or False에 대한 결과, a와 b가 값으면 True, 다르면 False</span>
+
+<span class="sd">        예제:</span>
+<span class="sd">            다음과 같이 사용하세요:</span>
+
+<span class="sd">            &gt;&gt;&gt; Test(1, 2).is_same()</span>
+<span class="sd">            False</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_a</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">_b</span>
+
+    <span class="k">def</span> <span class="nf">plus</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;미리 입력받은 a와 b값을 더한 결과를 반환합니다.</span>
+
+<span class="sd">        :returns: int a + b에 대한 결과</span>
+
+<span class="sd">        예제:</span>
+<span class="sd">            다음과 같이 사용하세요:</span>
+
+<span class="sd">            &gt;&gt;&gt; Test(2, 1).plus()</span>
+<span class="sd">            3</span>
+
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_a</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_b</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h3>빌드 지우고 html 재 생성<a class="headerlink" href="#id7" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make clean
+$ make html
+</pre></div>
+</div>
+</div>
+<div class="section" id="error">
+<h3>error 발생시!<a class="headerlink" href="#error" title="제목 주소">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!!error 발생시
+
+conf.py 파일 수정
+
+
+# extensions = []    아래와 같이 수정.
+extensions = [&#39;sphinx.ext.autodoc&#39;]
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h3>정상 실행시 좌측<a class="headerlink" href="#id8" title="제목 주소">¶</a></h3>
+</div>
+<div class="section" id="id9">
+<h3>5. 패키지 소스 설명과 같은 페이지 생성~!!<a class="headerlink" href="#id9" title="제목 주소">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Intro4.html" class="btn btn-neutral float-right" title="4. 소스 설명 예제" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Intro2.html" class="btn btn-neutral float-left" title="2. 기본 문법 참고" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; 저작권 2020, szw
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

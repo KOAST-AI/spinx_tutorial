@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. 소스 설명 예제 &mdash; test3 1.0 문서</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="5. 패키지 소스 설명" href="my_package.html" />
+    <link rel="prev" title="3. 문서 작성하기." href="Intro3.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> test3
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Intro1.html">1. Sphinx 란 무엇인가?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intro1.html#id4">2. 설치하기 및 실행하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intro2.html">2. 기본 문법 참고</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intro2.html#syntax">- Syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intro3.html">3. 문서 작성하기.</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. 소스 설명 예제</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">4. <strong>소스 설명</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">프로젝트 정보 출력</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">사용 결과</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">예제 소스 출력</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="my_package.html">5. 패키지 소스 설명</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">test3</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>4. 소스 설명 예제</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Intro4.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>4. 소스 설명 예제<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<div class="section" id="id2">
+<h2>4. <strong>소스 설명</strong><a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">)</span> <span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Summary line.</span>
+
+<span class="sd">    Extended description of function.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        arg1: 1번 독립 변수 설명</span>
+<span class="sd">        arg2: 2번 독립변수 설명</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        리턴해줄 값</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<dl>
+<dt>def func(arg1, arg2) :</dt><dd><p>《》》Summary line.</p>
+<p>Extended description of function.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>arg1: 1번 독립 변수 설명
+arg2: 2번 독립변수 설명</p>
+</dd>
+<dt>Returns:</dt><dd><p>리턴해줄 값</p>
+</dd>
+</dl>
+<p>《》》
+return True</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id3">
+<h2>프로젝트 정보 출력<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## Sphinx 문법 사용</span>
+<span class="o">..</span> <span class="n">literalinclude</span><span class="p">::</span> <span class="o">./</span><span class="n">conf</span><span class="o">.</span><span class="n">py</span>
+<span class="p">:</span><span class="n">language</span><span class="p">:</span> <span class="n">python</span>
+<span class="p">:</span><span class="n">linenos</span><span class="p">:</span>
+<span class="p">:</span><span class="n">emphasize</span><span class="o">-</span><span class="n">lines</span><span class="p">:</span> <span class="mi">3</span>
+<span class="p">:</span><span class="n">lines</span><span class="p">:</span> <span class="mi">20</span><span class="o">-</span><span class="mi">25</span>
+</pre></div>
+</div>
+<div class="section" id="id4">
+<h3>사용 결과<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">project</span> <span class="o">=</span> <span class="s1">&#39;test3&#39;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="s1">&#39;2020, szw&#39;</span>
+<span class="hll"><span class="n">author</span> <span class="o">=</span> <span class="s1">&#39;szw&#39;</span>
+</span>
+<span class="c1"># The full version, including alpha/beta/rc tags</span>
+<span class="n">release</span> <span class="o">=</span> <span class="s1">&#39;1.0&#39;</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>예제 소스 출력<a class="headerlink" href="#id5" title="제목 주소">¶</a></h2>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">=================</span>
+<span class="sd">source</span>
+<span class="hll"><span class="sd">=================</span>
+</span><span class="sd">&#39;&#39;&#39;</span>
+
+<span class="hll"><span class="k">class</span> <span class="nc">Book</span><span class="p">:</span>
+</span>    
+    <span class="k">def</span> <span class="nf">setData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">author</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">price</span> <span class="o">=</span> <span class="n">price</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">author</span> <span class="o">=</span> <span class="n">author</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;제목 : &quot;</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;가격 : &#39;</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">price</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;지은이 : &#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">author</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">printData</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;제목 : &quot;</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;가격 : &#39;</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">price</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;지은이 : &#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">author</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;객체생성 완료&#39;</span><span class="p">)</span>
+
+
+<span class="n">book</span> <span class="o">=</span> <span class="n">Book</span><span class="p">()</span>
+
+<span class="n">book</span><span class="o">.</span><span class="n">setData</span><span class="p">(</span><span class="s1">&#39;작은아씨들&#39;</span><span class="p">,</span><span class="s1">&#39;7000&#39;</span><span class="p">,</span><span class="s1">&#39;미상&#39;</span><span class="p">)</span>
+
+<span class="n">book</span><span class="o">.</span><span class="n">setData</span><span class="o">.</span><span class="n">title</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="my_package.html" class="btn btn-neutral float-right" title="5. 패키지 소스 설명" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Intro3.html" class="btn btn-neutral float-left" title="3. 문서 작성하기." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; 저작권 2020, szw
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
