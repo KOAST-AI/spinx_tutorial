@@ -44,6 +44,7 @@ git bash 실행.
 .. image:: ./image/git_bash.png
 
 
+
 ::
 
         ## 아래 명령어를 차례대로 실행한다.
@@ -68,7 +69,8 @@ git bash 실행.
         # -M 옵션은 branch 의 이름을 의미.
         git branch -M main
 
-.. image:: ./image/git_bash.png
+
+
 
 ::
 
@@ -95,6 +97,7 @@ git bash 실행.
 root 를 docs로 변경 그리고 save 클릭
 """"""""""""""""""""""""""""""""""""""""""""""
 docs에 생성된 index.html페이지로 연결하기 위해서.
+
 
 .. image:: ./image/root-docs.png
 
