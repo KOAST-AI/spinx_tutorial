@@ -26,7 +26,7 @@ make 가 있는 root 경로에 docs폴더를 생성.
 
 root/_build/html 에 생성된 모든 파일을 docs폴더에 복사
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-.. image:: ./image/make_docs.png
+.. image:: ./image/copy_html.png
 .. image:: ./image/paste_doc.PNG
 
 

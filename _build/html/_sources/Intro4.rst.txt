@@ -70,4 +70,4 @@ def func(arg1, arg2) :
    :language: python
    :linenos:
    :emphasize-lines: 4,7
-   :lines: 1-34
+   :lines: 1-33

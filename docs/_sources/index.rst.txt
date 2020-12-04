@@ -16,6 +16,7 @@ Welcome to test3's documentation!
    Intro4
    my_package
    Intro5
+   Intro6
    
 
 
