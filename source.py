@@ -31,4 +31,3 @@ book = Book()
 
 book.setData('작은아씨들','7000','미상')
 
-book.setData.title
