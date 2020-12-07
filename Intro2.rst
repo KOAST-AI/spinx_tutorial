@@ -28,4 +28,4 @@ https://bit.ly/2VNdlPI
 vscode의 도구로 함수설명시 자동으로 설명 주석을 생성해 준다.
 
 vscode Extention 추가 
- 검색 >> AI Python Docstring Generator >> install
+검색 >> AI Python Docstring Generator >> install
