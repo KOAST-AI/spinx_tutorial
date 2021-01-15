@@ -2,4 +2,4 @@
 
 설치 및 실행방법을 적어놨습니다. 참고해주세요 ~
 
-https://ziwon-seo.github.io/test_repository
+https://ziwon-seo.github.io/spinx_tutorial/
